@@ -1,0 +1,23 @@
+<div class = "update-form">
+  <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" [(ngModel)]="data.title" name="title">
+  </div>
+  <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" [(ngModel)]="data.author" name="author">
+  </div>
+  <div class="form-group">
+      <label for="genre">Genre</label>
+      <input type="text" class="form-control" id="genre" [(ngModel)]="data.genre" name="genre">
+  </div>
+  <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" id="description" [(ngModel)]="data.description" name="description">
+  </div>
+  <div class="form-group">
+      <label for="publicationYear">Published Year</label>
+      <input type="text" class="form-control" id="publicationYear" [(ngModel)]="data.publicationYear" name="publicationYear">
+  </div>
+</div>
+<button (click)="editBook()">Apply</button>

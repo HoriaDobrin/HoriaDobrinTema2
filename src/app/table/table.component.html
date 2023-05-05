@@ -1,0 +1,24 @@
+<nz-table #basicTable [nzData]="books">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Genre</th>
+      <th>Description</th>
+      <th>Published Year</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of basicTable.data">
+      <td>{{book.title}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.genre}}</td>
+      <td>{{book.description}}</td>
+      <td>{{book.publicationYear}}</td>
+      <td>
+        <button class="editButton" (click)="updateBook(book)">Update</button>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
